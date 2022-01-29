@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQuery Crash Course | Selectors</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Jquery Crash Couirse</h1>
-    </header>
-    <div id="container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JQuery Crash Course | Selectors</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Jquery Crash Couirse</h1>
+        </header>
+        <div id="container">
+            <div id="heading1">Heading One</div>
+            <p id="para1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span
+                    >Rerum qui possimus iusto saepe ipsum labore et! Qui
+                    quis.</span
+                >
+                provident tempora deserunt harum, exercitationem, ratione vel
+                aliquid consequuntur quos eligendi atque?
+            </p>
 
-    </div>
+            <h1 class="heading2">Heading Two</h1>
+            <p class="para2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span
+                    >Rerum qui possimus iusto saepe ipsum labore et! Qui
+                    quis.</span
+                >
+                provident tempora deserunt harum, exercitationem, ratione vel
+                aliquid consequuntur quos eligendi atque?
+            </p>
 
-    <scrtip>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, excepturi perferendis, tempore at rem quis, est qui dicta in minus eum libero necessitatibus sed delectus dolore exercitationem. Quos, obcaecati ducimus?</span>
+            
+            <ul id="list">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
 
-    </scrtip>
-</body>
+            <input type="button" value="button 1">
+            <input type="submit" value="Submit">
+            <input type="text">
+
+            <a href="http://google.com">Google</a>
+            <a href="http://yahoo.com">Yahoo</a>
+
+        </div>
+
+        <script>
+            $('h1').hide()
+            $('h1#heading1').hide()
+            $('h1.heading2').hide();
+            $('p span').css('color', 'red');
+            $('ul#list li:first').css('color', 'red')
+            $('ul#list li:last').css('color', 'red')
+            $('ul#list li:even').css('background-color', 'red')
+            $(':text').css('color', 'red');
+            $('[href]').css('color', 'red')
+            $('a[href="http://yahoo.com"]').css('color', 'green')
+        </script>
+    </body>
 </html>
